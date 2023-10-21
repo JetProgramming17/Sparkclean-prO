@@ -34,6 +34,51 @@
 
 <!-- Header section ends-->
 
+
+<!-- home section starts  -->
+
+<section class="home">
+
+   <div class="swiper home-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide" style="background:url(https://images.unsplash.com/photo-1549675613-d302ff605a5c?auto=format&fit=crop&q=80&w=1472&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat">
+               <div class="content">
+                  <span>sparkly, shiney and affordable</span>
+                  <h3>we have your house covered.</h3>
+                  <a href="package.php" class="btn">discover more</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background:url(https://images.unsplash.com/photo-1494458453337-e9062e968178?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat">
+               <div class="content">
+                  <span>sparkly, shiney and affordable</span>
+                  <h3>your apartment messy? we got you.</h3>
+                  <a href="package.php" class="btn">discover more</a>
+               </div>
+            </div>
+
+         <div class="swiper-slide slide" style="background:url(https://images.unsplash.com/photo-1493135637657-c2411b3497ad?auto=format&fit=crop&q=80&w=1471&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat">
+               <div class="content">
+                  <span>sparkly, shiney and affordable</span>
+                  <h3>make moving out easy</h3>
+                  <a href="package.php" class="btn">discover more</a>
+               </div>
+         </div>
+
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      
+   </div>
+</section>
+
+
+<!-- home section ends  -->
+
+
 <!-- Service section starts here -->
 
 <section class="services">
@@ -128,8 +173,8 @@
 
 
 <!-- swiper js link-->
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
-<script src="js/script.js></script>
+<script src="script.js"></script>
 </body>
 </html>

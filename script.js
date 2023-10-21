@@ -1,12 +1,21 @@
-let menu = document.querySelector('menu-btn');
+let menu = document.querySelector('#menu-btn');
 let navbar = document.querySelector('.header .navbar');
 
-menu.onClick = () =>{
+menu.onclick = () =>{
     menu.classList.toggle('fa-times');
-    menu.classList.toggle('active');
+    navbar.classList.toggle('active');
 };
 
 window.onscroll = () =>{
     menu.classList.remove('fa-times');
-    menu.classList.remove('active');
-}
+    navbar.classList.remove('active');
+};
+
+var swiper = new Swiper(".home-slider", {
+    loop: true, 
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+  
