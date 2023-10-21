@@ -34,6 +34,50 @@
 
 <!-- Header section ends-->
 
+<!-- Service section starts here -->
+
+<section class="services">
+
+   <h1 class="heading-title"> our services</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="image/house.png" alt="center">
+         <h3>indoor</h3>
+      </div>
+
+      <div class="box">
+         <img src="image/outside.png" alt="center">
+         <h3>outdoor</h3>
+      </div>
+
+      <div class="box">
+         <img src="image/apartment.png" alt="center">
+         <h3>apartment</h3>
+      </div>
+
+      <div class="box">
+         <img src="image/luggage.png" alt="center">
+         <h3>moving out</h3>
+      </div>
+
+      <div class="box">
+         <img src="image/carwash.png" alt="center">
+         <h3>car wash</h3>
+      </div>
+
+      <div class="box">
+         <img src="image/painting.png" alt="center">
+         <h3>house paint</h3>
+      </div>
+   </div>
+
+</section>
+
+
+<!-- Service section ends here -->
+
 
 
 
