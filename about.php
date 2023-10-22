@@ -1,3 +1,15 @@
+<?php
+
+@include 'config.php';
+
+session_start();
+
+if(!isset($_SESSION['customer_name'])){
+   header('location:login_form.php');
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,6 +39,9 @@
       <a href="about.php">about</a>
       <a href="package.php">package</a>
       <a href="book.php">book</a>
+      <a href="logout.php" class="logo">Hi <?php echo $_SESSION['customer_name'] ?>!</a>
+      <img src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?auto=format&fit=crop&q=80&w=1385&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+
    </nav>
 
    <div id="menu-btn" class="fas fa-bars"></div>
@@ -38,6 +53,126 @@
     <h1>about us</h1>
 </div>
 
+<!-- about section starts -->
+
+<section class="about">
+
+   <div class="image">
+      <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+   </div>
+
+   <div class="content">
+      <h3>why choose us?</h3>
+      <p>Choosing us means choosing excellence in cleaning services. We stand out for our unwavering commitment
+      to your satisfaction. Our experienced team uses eco-friendly products an
+      d a meticulous approach to ensure every nook and cranny is spotless.</p>
+      <p>We offer customized solutions to fit your unique needs, and
+      our competitive pricing makes top-tier cleaning accessible to all.</p>
+      <div class="icons-container">
+         <div class="icons">
+            <i class="fas fa-map"></i>
+            <span>best packages</span>
+         </div>
+         <div class="icons">
+            <i class="fas fa-hand-holding-usd"></i>
+            <span>affordable prices </span>
+         </div>
+         <div class="icons">
+            <i class="fas fa-headset"></i>
+            <span>24/7 guide service </span>
+         </div>
+      </div>
+   </div>
+
+</section>
+
+
+<!-- about section end -->
+
+<!-- reviews section starts -->
+
+<section class="reviews">
+
+   <div class="swiper reviews-slider">
+
+   <div class="swiper-wrapper">
+      <div class="swiper-slider slide">
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+            </div>
+            <p>Your feedback matters! At Sparkly clean pro,
+            we value your opinion and are committed to providing the best service possible. Please take a moment to rate our work. 
+            Your input helps us maintain our high standards and continually improve.</p>
+            <h3><?php echo $_SESSION['customer_name'] ?>!</h3>
+            <span>customer</span>
+            <img src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?auto=format&fit=crop&q=80&w=1385&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+      </div>
+
+      <div class="swiper-slider slide">
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            
+         </div>
+         <p>Your feedback matters! At Sparkly clean pro,
+         we value your opinion and are committed to providing the best service possible. Please take a moment to rate our work. 
+         Your input helps us maintain our high standards and continually improve.</p>
+         <h3><?php echo $_SESSION['customer_name'] ?>!</h3>
+         <span>customer</span>
+         <img src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?auto=format&fit=crop&q=80&w=1385&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+      </div>
+
+      <div class="swiper-slider slide">
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+         </div>
+         <p>we value your opinion and are committed to providing the best service possible. Please take a moment to rate our work. 
+         Your input helps us maintain our high standards and continually improve.</p>
+         <h3><?php echo $_SESSION['customer_name'] ?>!</h3>
+         <span>customer</span>
+         <img src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?auto=format&fit=crop&q=80&w=1385&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+      </div>
+
+      <div class="swiper-slider slide">
+         <div class="stars">
+            <i class="fas fa-star"></i>
+         
+         </div>
+         <p>No comment</p>
+         <h3><?php echo $_SESSION['customer_name'] ?>!</h3>
+         <span>customer</span>
+         <img src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?auto=format&fit=crop&q=80&w=1385&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+      </div>
+         
+      <div class="swiper-slider slide">
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+         </div>
+         <p>Great service</p>
+         <h3><?php echo $_SESSION['customer_name'] ?>!</h3>
+         <span>customer</span>
+         <img src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?auto=format&fit=crop&q=80&w=1385&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+      </div>
+   </div>
+     
+   
+
+
+
+</section>
+
+<!-- reviews section end -->
 
 
 

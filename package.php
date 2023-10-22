@@ -1,3 +1,15 @@
+<?php
+
+@include 'config.php';
+
+session_start();
+
+if(!isset($_SESSION['customer_name'])){
+   header('location:login_form.php');
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,6 +39,7 @@
       <a href="about.php">about</a>
       <a href="package.php">package</a>
       <a href="book.php">book</a>
+      <a href="logout.php" class="logo">Hi <span><?php echo $_SESSION['customer_name'] ?>!</a>
    </nav>
 
    <div id="menu-btn" class="fas fa-bars"></div>

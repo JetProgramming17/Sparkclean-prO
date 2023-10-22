@@ -1,3 +1,15 @@
+<?php
+
+@include 'config.php';
+
+session_start();
+
+if(!isset($_SESSION['customer_name'])){
+   header('location:login_form.php');
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,13 +39,13 @@
       <a href="about.php">about</a>
       <a href="package.php">package</a>
       <a href="book.php">book</a>
+      <a href="logout.php" class="logo">Hi <span><?php echo $_SESSION['customer_name'] ?>!</a>
    </nav>
 
    <div id="menu-btn" class="fas fa-bars"></div>
 </section>   
 
 <!-- Header section ends-->
-
 
 <!-- home section starts  -->
 
@@ -71,7 +83,7 @@
 
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
-      
+
    </div>
 </section>
 
@@ -124,10 +136,99 @@
 <!-- Service section ends here -->
 
 
+<!-- Home about section starts -->
+
+<section class="home-about">
+
+   <div class="image">
+      <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+   </div>
+
+   <div class="content">
+      <h3>about us</h3>
+      <p>Welcome to Sparkly Clean Pro, your trusted partner in maintaining a clean and healthy environment for your home or business.
+      At Sparkly Clean Pro, we are committed to exceeding your expectations through our top-notch 
+      cleaning services, dedicated team, and a passion for making your spaces sparkle.</p>
+      <a href="about.php" class="btn">read more</a>
+   </div>
+
+</section>
+
+<!-- Home about section ends -->
 
 
+<!-- Home packages section starts -->
+
+<section class="home-packages">
+
+   <h1 class="heading-title"> our packages</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="image">
+            <img src="https://images.unsplash.com/photo-1610527003928-47afd5f470c6?auto=format&fit=crop&q=80&w=1472&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+         </div>
+         <div class="content">
+            <h3>indoor house cleaning</h3>
+            <p>Indoor house cleaning is the essential process of tidying, sanitizing, and maintaining the interior of your home.
+            It involves thorough cleaning of all living spaces, including bedrooms,
+            living rooms, kitchens, bathrooms, and more.</p>
+            <a href="book.php" class="btn">book now</a>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&q=80&w=1632&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+         </div>
+         <div class="content">
+            <h3>outdoor house cleaning</h3>
+            <p>Our outdoor house cleaning services are designed to restore the beauty and hygiene of your property's exterior. We specialize in
+            cleaning and rejuvenating various outdoor spaces to ensure they look their best and
+            are well-maintained.
+            </p>
+            <a href="book.php" class="btn">book now</a>
+         </div>
+      </div>
 
 
+      <div class="box">
+         <div class="image">
+            <img src="https://images.unsplash.com/photo-1558778909-1d4ea850da7d?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+         </div>
+         <div class="content">
+            <h3>Apartment cleaning</h3>
+            <p>Our apartment cleaning service is designed to make your living space. We simply values a spotless environment. We can
+            clean every corner of your apartment, from the living room to the kitchen, bedrooms, 
+            and as not to forget about your own bathrooms.</p>
+            <a href="book.php" class="btn">book now</a>
+         </div>
+      </div>
+
+   </div>
+
+   <div class="load-more"> <a href="package.php" class="btn"> load more</a></div>
+
+</section>
+
+
+<!-- Home packages section ends -->
+
+<!-- Home offer section starts -->
+
+<section class="home-offer">
+   <div class="content">
+      <h3>upto 30% off</h3>
+      <p>When you choose both indoor and outdoor cleaning services with us, you're in for a treat. 
+      We're excited to offer you an incredible deal with up to 30% off your total bill! That's right - you can now enjoy a spotless, 
+      fresh interior while having your outdoor spaces gleaming too, all at a fraction of the cost.</p>
+      <a href="book.php" class="btn">book now</a>
+   </div>
+</section>
+
+
+<!-- Home offer section ends -->
 
 
 <!-- footer section starts -->
