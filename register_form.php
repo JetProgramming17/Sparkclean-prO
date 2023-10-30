@@ -25,8 +25,9 @@ if(isset($_POST['submit'])){
       if($pass != $cpass){
          $error[] = 'password not matched!';
       }else{
-         $insert = "INSERT INTO customer_form(name, email, password, user_type) VALUES('$name','$email','$pass','$user_type')";
+         $insert = "INSERT INTO customer_form(name, email, password, user_type, status) VALUES('$name','$email','$pass','$user_type','pending')";
          mysqli_query($conn, $insert);
+         $error[] = 'Your account is waiting for approval';
          header('location:login_form.php');
       }
    }
@@ -75,6 +76,8 @@ if(isset($_POST['submit'])){
       <select name="user_type">
          <option value="customer">customer</option>
          <option value="admin">cleaner</option>
+         <option value="manager">admin</option>
+
       </select>
       <input type="submit" name="submit" value="register" class="form-btn">
       <p>already have an account? <a href="login_form.php">login</a></p>

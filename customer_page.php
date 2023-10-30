@@ -172,7 +172,7 @@ if(!isset($_SESSION['customer_name'])){
          <div class="content">
             <h3>indoor house cleaning</h3>
             <p>Indoor house cleaning is the essential process of tidying, sanitizing, and maintaining the interior of your home.
-            It involves thorough cleaning of all living spaces, including bedrooms,
+            It involves thorough cleaning of all living spaces,from the living room to the kitchen including bedrooms,
             living rooms, kitchens, bathrooms, and more.</p>
             <a href="book.php" class="btn">book now</a>
          </div>
@@ -276,6 +276,6 @@ if(!isset($_SESSION['customer_name'])){
 <!-- swiper js link-->
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
-<script src="script.js"></script>
+<script src="script/script.js"></script>
 </body>
 </html>

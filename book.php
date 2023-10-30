@@ -48,9 +48,53 @@ if(!isset($_SESSION['customer_name'])){
 <!-- Header section ends-->
 
 <div class="heading" style="background:url(https://images.unsplash.com/photo-1563453392212-326f5e854473?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
-    <h1>booking</h1>
+    <h1>book now</h1>
 </div>
 
+<!-- booking section starts-->
+
+<section class="booking">
+
+    <h1 class="heading-title">book your service!</h1>
+      <form action="book_form.php" method="post" class="book-form">
+
+         <div class="flex">
+            <div class="inputBox">
+               <span>name :</span>
+               <input type="text" placeholder="enter your name" name="name">
+            </div>
+            <div class="inputBox">
+               <span>email :</span>
+               <input type="email" placeholder="enter email address" name="email">
+            </div>
+            <div class="inputBox">
+               <span>phone :</span>
+               <input type="number" placeholder="enter phone number" name="phone">
+            </div>
+            <div class="inputBox">
+               <span>address :</span>
+               <input type="text" placeholder="enter home address" name="address">
+            </div>
+            <div class="inputBox">
+               <span>service type :</span>
+               <input type="text" placeholder="enter service" name="service">
+            </div>
+            <div class="inputBox">
+               <span>number rooms :</span>
+               <input type="number" placeholder="number of rooms" name="rooms">
+            </div>
+            <div class="inputBox">
+               <span>date :</span>
+               <input type="datetime-local" placeholder="service date" name="date">
+            </div>
+         </div>
+
+         <input type="submit" value="book" class="btn" name="send">
+      </form>
+</section>
+
+
+<!-- booking section ends-->
 
 
 
