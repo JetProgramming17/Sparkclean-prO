@@ -77,7 +77,7 @@ if(!isset($_SESSION['customer_name'])){
             </div>
             <div class="inputBox">
                <span>service type :</span>
-               <input type="text" placeholder="enter service" name="service">
+               <input type="text" placeholder="enter service" name="service" value="Indoor Cleaning">
             </div>
             <div class="inputBox">
                <span>number rooms :</span>
